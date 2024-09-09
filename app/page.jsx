@@ -20,7 +20,7 @@ const Home = () => {
             <span className="text-xl">Software Developer</span>
             
             <h1 className="mb-6 h1">
-              Hello I am <br /> 
+              Hello I'm <br /> 
               <span className="text-accent">Buhle Ngqongwa</span>
             </h1>
 
@@ -33,10 +33,12 @@ const Home = () => {
             {/*BUTTON AND SOCIALS*/}
             <div className="flex flex-col items-center gap-8 xl:flex-row">
               
-              <Button variant="outline" size="lg" className="flex items-center gap-2 uppercase">
-                <span>Download CV</span>
-                <FiDownload className="text-xl" />
-              </Button>
+              <a href="/" download="Resume.pdf">
+                <Button variant="outline" size="lg" className="flex items-center gap-2 uppercase">
+                  <span>Download CV</span>
+                  <FiDownload className="text-xl" />
+                </Button>
+              </a>
 
               <div className="mb-8 xl:mb-0">
                 <Social 
