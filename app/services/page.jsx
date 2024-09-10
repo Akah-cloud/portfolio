@@ -7,25 +7,25 @@ const services = [
   {
     num: "01",
     title: "Web Development",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni quae. ",
+    description: "I provide end-to-end web development services specializing in responsive, performance-optimized websites using Next.js, React, JavaScript, HTML, and CSS. From design to deployment, I deliver tailored solutions that enhance user experience, ensure scalability, and drive business results. ",
     href: ""
   },
   {
     num: "02",
     title: "UI/UX Design",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni quae. ",
+    description: "I design user-centered, visually compelling interfaces that offer seamless experiences. By blending aesthetics with functionality and conducting thorough user research, I create intuitive designs that enhance engagement across all devices. ",
     href: ""
   },
   {
     num: "03",
-    title: "Video Editing",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni quae. ",
+    title: "Back Development",
+    description: "I specialize in back-end development, creating secure, scalable server-side systems with efficient data management. Using technologies like Node.js and MongoDB, I design APIs and database solutions that ensure high performance and seamless integration across platforms. ",
     href: ""
   },
   {
     num: "04",
-    title: "SEO",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni quae. ",
+    title: "App development",
+    description: "I develop desktop and mobile applications tailored for various operating systems, including Windows, macOS, iOS, and Android. Specializing in intuitive user experiences and robust functionality, I ensure seamless performance, security, and scalability across platforms. ",
     href: ""
   },
 ];

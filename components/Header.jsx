@@ -16,17 +16,16 @@ const Header = () => {
           </h1>
         </Link>
 
-        
         {/* Desktop nav & Hire me button */}
         <div className="items-center hidden gap-8 xl:flex">
           <Nav />
           
-          <Link href="/contact">
+          <a href="mailto:ngqongwabuhle@gmail.com?subject=Interest%20in%20Hiring">
             <Button>Hire me</Button>
-          </Link>
+          </a>
         </div>
 
-        {/*Mobile nav*/}
+        {/* Mobile nav */}
         <div className="xl:hidden">
           <MobileNav />
         </div>

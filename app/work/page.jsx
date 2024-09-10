@@ -20,7 +20,7 @@ const projects = [
     category: "frontend",
     title: "project 1",
     description: 
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas sint a rem libero ut iste animi saepe aliquid est ea asperiores sequi non omnis quibusda.",
+      "I developed a fully functional e-commerce front-end that mirrors the structure of an online shopping cart system, similar to Amazon. The project features a dynamic product listing, interactive cart functionality, and a responsive user interface. Users can add or remove items from the cart, view item details, and proceed to checkout.",
     stack:[{name: "Html 5"}, {name: "Css 3"}, {name: "Javascript"}],
     image: "/assets/work/thumb1.png",
     live: "",
@@ -29,11 +29,11 @@ const projects = [
 
   {
     num: "02",
-    category: "fullstack",
+    category: "Frontend",
     title: "project 2",
     description: 
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas sint a rem libero ut iste animi saepe aliquid est ea asperiores sequi non omnis quibusda.",
-    stack:[{name: "Next.js"}, {name: "tailwind.css"}, {name: "Node.js"}],
+      "I am designing an e-commerce website dedicated to selling shoes, focusing on a clean and intuitive interface. The platform includes product browsing, detailed product pages, and a streamlined shopping cart experience. While the project is still in development, it will feature responsive design, secure payment integration, and an easy-to-navigate structure, ensuring a smooth shopping experience across all devices.",
+    stack:[{name: "Html 5"}, {name: "Css"}, {name: "Javascript"}],
     image: "/assets/work/thumb2.png",
     live: "",
     github: "",
@@ -41,11 +41,11 @@ const projects = [
 
   {
     num: "03",
-    category: "frontend",
+    category: "Alarm Clock",
     title: "project 3",
     description: 
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas sint a rem libero ut iste animi saepe aliquid est ea asperiores sequi non omnis quibusda.",
-    stack:[{name: "Next.js"}, {name: "Tailwind.css"}],
+      "I designed an alarm clock application using Python that allows users to set alarms and receive notifications at specified times. The application features a simple interface for setting and managing alarms, and it provides customizable alert options. It uses Python libraries for time management and notifications, ensuring reliable functionality and ease of use.",
+    stack:[{name: "Python"}],
     image: "/assets/work/thumb3.png",
     live: "",
     github: "",
