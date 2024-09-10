@@ -19,48 +19,51 @@ const projects = [
     num: "01",
     category: "frontend",
     title: "project 1",
-    description: 
-      "I developed a fully functional e-commerce front-end that mirrors the structure of an online shopping cart system, similar to Amazon. The project features a dynamic product listing, interactive cart functionality, and a responsive user interface. Users can add or remove items from the cart, view item details, and proceed to checkout.",
-    stack:[{name: "Html 5"}, {name: "Css 3"}, {name: "Javascript"}],
+    description: "I developed a fully functional e-commerce front-end that mirrors the structure of an online shopping cart system, similar to Amazon. The project features a dynamic product listing, interactive cart functionality, and a responsive user interface. Users can add or remove items from the cart, view item details, and proceed to checkout.",
+    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
     image: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
+    live: "", // Add live project URL if available
+    github: "https://github.com/Akah-cloud/amazon-cart.git", // Replace with actual GitHub URL
   },
-
   {
     num: "02",
     category: "Frontend",
     title: "project 2",
-    description: 
-      "I am designing an e-commerce website dedicated to selling shoes, focusing on a clean and intuitive interface. The platform includes product browsing, detailed product pages, and a streamlined shopping cart experience. While the project is still in development, it will feature responsive design, secure payment integration, and an easy-to-navigate structure, ensuring a smooth shopping experience across all devices.",
-    stack:[{name: "Html 5"}, {name: "Css"}, {name: "Javascript"}],
+    description: "I am designing an e-commerce website dedicated to selling shoes, focusing on a clean and intuitive interface. The platform includes product browsing, detailed product pages, and a streamlined shopping cart experience. While the project is still in development, it will feature responsive design, secure payment integration, and an easy-to-navigate structure, ensuring a smooth shopping experience across all devices.",
+    stack: [{ name: "Html 5" }, { name: "Css" }, { name: "Javascript" }],
     image: "/assets/work/thumb2.png",
-    live: "",
-    github: "",
+    live: "", // Add live project URL if available
+    github: "https://github.com/Akah-cloud/Snickwest-repo.git", // Replace with actual GitHub URL
   },
-
   {
     num: "03",
     category: "Alarm Clock",
     title: "project 3",
-    description: 
-      "I designed an alarm clock application using Python that allows users to set alarms and receive notifications at specified times. The application features a simple interface for setting and managing alarms, and it provides customizable alert options. It uses Python libraries for time management and notifications, ensuring reliable functionality and ease of use.",
-    stack:[{name: "Python"}],
+    description: "I designed an alarm clock application using Python that allows users to set alarms and receive notifications at specified times. The application features a simple interface for setting and managing alarms, and it provides customizable alert options. It uses Python libraries for time management and notifications, ensuring reliable functionality and ease of use.",
+    stack: [{ name: "Python" }],
     image: "/assets/work/thumb3.png",
-    live: "",
-    github: "",
+    live: "", // Add live project URL if available
+    github: "https://github.com/Akah-cloud/Alarm-Clock-Project.git", // Replace with actual GitHub URL
+  },
+  {
+    num: "04",
+    category: "Power BI",
+    title: "project 4",
+    description: "I used Power BI to analyze data from South African universities (2008-2016), focusing on performance, enrollment trends, and graduate outcomes. I developed an interactive dashboard showcasing key metrics like enrollment growth and graduation rates, providing actionable insights to support data-driven decisions for educational improvement.",
+    stack: [{ name: "Power Bi" }, { name: "Dax" }],
+    image: "/assets/work/thumb4.png",
+    live: "https://app.powerbi.com/Redirect?action=OpenReport&appId=d0827fff-c87d-4eac-8ef5-bfb4beaddc0d&reportObjectId=a9b96b37-c7bf-47d5-a78d-b68c6410cde0&ctid=a3f14f21-237f-4028-b978-425eb768a716&reportPage=86e21ec67a3b5185e4d6&pbi_source=appShareLink&portalSessionId=682f8db9-6336-4313-8fde-fc956c386dd2", // Add live project URL if available
+    github: "", // Replace with actual GitHub URL
   },
 ];
-
-
 
 const Work = () => {
   const [project, setProject] = useState(projects[0]);
 
-  const handleSlideChange = (swiper) =>{
-    //get current slide index
+  const handleSlideChange = (swiper) => {
+    // get current slide index
     const currentIndex = swiper.activeIndex;
-    //update project state based on current slide index
+    // update project state based on current slide index
     setProject(projects[currentIndex]);
   };
 
@@ -88,13 +91,13 @@ const Work = () => {
               </p>
               {/*  stack */}
               <ul className="flex gap-4">
-                {project.stack.map((item, index) =>{
+                {project.stack.map((item, index) => {
                   return (
                     <li key={index} className="text-xl text-accent">
-                    {item.name}
-                    {/* remove the last comma */}
-                    {index !== project.stack.length - 1 && ","}
-                  </li>
+                      {item.name}
+                      {/* remove the last comma */}
+                      {index !== project.stack.length - 1 && ","}
+                    </li>
                   );
                 })}
               </ul>
@@ -103,7 +106,7 @@ const Work = () => {
               {/* buttons */}
               <div className="flex items-center gap-4">
                 {/* live project button */}
-                <Link href={project.live}> 
+                <Link href={project.live}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -117,7 +120,7 @@ const Work = () => {
                 </Link>
 
                 {/* github project button */}
-                <Link href={project.github}> 
+                <Link href={project.github}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -140,16 +143,16 @@ const Work = () => {
               className="xl:h-[520px] mb-12"
               onSlideChange={handleSlideChange}
             >
-              {projects.map((projects, index) => {
+              {projects.map((_, index) => {
                 return (
                   <SwiperSlide key={index} className="w-full">
                     <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
-                    {/* overlay */}
-                    <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
-                    {/* image */}
-                    <div className="relative w-full h-full">
-                      <Image src={project.image} fill className="object-cover" alt=""/>
-                    </div>
+                      {/* overlay */}
+                      <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                      {/* image */}
+                      <div className="relative w-full h-full">
+                        <Image src={project.image} fill className="object-cover" alt="" />
+                      </div>
                     </div>
                   </SwiperSlide>
                 );

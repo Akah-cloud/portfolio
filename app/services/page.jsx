@@ -12,8 +12,8 @@ const services = [
   },
   {
     num: "02",
-    title: "UI/UX Design",
-    description: "I design user-centered, visually compelling interfaces that offer seamless experiences. By blending aesthetics with functionality and conducting thorough user research, I create intuitive designs that enhance engagement across all devices. ",
+    title: "Power Bi",
+    description: "I offer expert Power BI services, transforming raw data into interactive, insightful dashboards and reports. With advanced data modeling and visualization techniques, I help businesses make informed decisions, drive performance, and gain valuable insights. Let’s unlock the full potential of your data. ",
     href: ""
   },
   {
