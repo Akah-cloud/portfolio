@@ -17,7 +17,7 @@ const Home = () => {
           {/*TEXT*/}
           <div className="text-center xl:text-left order-2 xl:order-none">
             
-            <span className="text-xl">Software Developer</span>
+            <span className="text-xl">SAP Developer</span>
             
             <h1 className="mb-6 h1">
               Hello I'm <br /> 
@@ -25,15 +25,13 @@ const Home = () => {
             </h1>
 
             <p className="max-w-[500px] mb-9 text-white/80 ">
-              I excel at crafting elegant digital experiences and 
-              I am proficient in various programming languages and 
-              technologies.
+            I specialize in developing efficient, user-focused SAP solutions that streamline business processes and enhance operational performance. With expertise in SAP technologies, software development, and data analysis, I deliver innovative solutions that combine technical precision, analytical insights, and business needs to drive impactful results.
             </p>
 
             {/*BUTTON AND SOCIALS*/}
             <div className="flex flex-col items-center gap-8 xl:flex-row">
               
-              <a href="/" download="Resume.pdf">
+              <a href="/2025@Resume.pdf" download="2025@Resume.pdf">
                 <Button variant="outline" size="lg" className="flex items-center gap-2 uppercase">
                   <span>Download CV</span>
                   <FiDownload className="text-xl" />

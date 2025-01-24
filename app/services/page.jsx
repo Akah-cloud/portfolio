@@ -18,7 +18,7 @@ const services = [
   },
   {
     num: "03",
-    title: "Back Development",
+    title: "Back-end Development",
     description: "I specialize in back-end development, creating secure, scalable server-side systems with efficient data management. Using technologies like Node.js and MongoDB, I design APIs and database solutions that ensure high performance and seamless integration across platforms. ",
     href: ""
   },
